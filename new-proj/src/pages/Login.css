@@ -1,0 +1,131 @@
+/* src/components/Login.css */
+
+/* Global Styles for the Login Section */
+.login-section {
+  background-color: #d2cdcd; /* Clean white background */
+  padding: 3rem; /* Increased padding for a spacious feel */
+  margin: 3rem auto; /* More margin for visual balance */
+  max-width: 400px;
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Softer, deeper shadow for depth */
+  text-align: center;
+}
+
+/* Login Title */
+.login-title {
+  font-size: 2.5rem; /* Larger title for better visibility */
+  color: #2c3e50; /* Darker shade for contrast */
+  margin-bottom: 1.5rem;
+  font-family: 'Arial', sans-serif; /* Changed font for a modern touch */
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Increased gap for better spacing */
+}
+
+/* Label Styles */
+.login-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #34495e; /* Softer gray color */
+  font-weight: bold; /* Made label bold */
+}
+
+/* Input Fields */
+.login-input {
+  padding: 1rem; /* Increased padding for comfort */
+  border: 2px solid #bdc3c7; /* Slightly darker border */
+  border-radius: 10px; /* More rounded corners */
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-input:focus {
+  border-color: #0b0b0b92; /* Blue color on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Softer blue shadow */
+}
+
+/* Error Message */
+.error-message {
+  color: #e74c3c; /* Red for error messages */
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 0.9rem; /* Slightly smaller font for error messages */
+}
+
+/* Buttons Container */
+.login-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 2rem; /* Increased margin for better separation */
+}
+
+/* Login Button */
+.login-button {
+  flex: 1;
+  padding: 1rem; /* Increased padding for comfort */
+  background-color: #060606; /* Bright blue for the login button */
+  color: #ffffff;
+  border: none;
+  border-radius: 10px; /* More rounded corners */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Added transform for button */
+}
+
+.login-button:hover {
+  background-color: #6f6f6f; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.login-button:disabled {
+  background-color: #95a5a6; /* Disabled color */
+  cursor: not-allowed;
+}
+
+/* Register Button */
+.register-button {
+  flex: 1;
+  padding: 1rem; /* Increased padding for comfort */
+  background-color: #0a0a0a; /* Bright green for register button */
+  color: #ffffff;
+  border: none;
+  border-radius: 10px; /* More rounded corners */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Added transform for button */
+}
+
+.register-button:hover {
+  background-color: #595a5a; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.register-button:disabled {
+  background-color: #95a5a6; /* Disabled color */
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .login-section {
+      padding: 2.5rem 1.5rem; /* Adjusted padding for smaller screens */
+      margin: 1.5rem; /* Adjusted margin for visual balance */
+  }
+
+  .login-title {
+      font-size: 2rem; /* Adjusted title size for smaller screens */
+  }
+
+  .login-button,
+  .register-button {
+      font-size: 0.95rem; /* Adjusted button font size */
+      padding: 0.75rem; /* Adjusted button padding */
+  }
+}

@@ -1,0 +1,173 @@
+/* Container Styles - Full Width */
+.submit-idea-section,
+.ideas-section,
+.login-prompt-section {
+  background-color: #858586; /* Slightly darker gray */
+  padding: 2rem;
+  margin: 1rem 0; /* Remove centering with margin auto */
+  width: 100%; /* Full width of the screen */
+  border-radius: 0; /* Remove rounded corners */
+  box-shadow: none; /* Remove box shadow for a flat look */
+}
+
+/* Ensure inner content is still readable */
+.submit-idea-form,
+.ideas-list {
+  padding: 0 2rem; /* Add left/right padding for readability */
+}
+
+/* Form Styles */
+.submit-idea-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input,
+.form-textarea {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #0a0a0a;
+  outline: none;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Submit Button Styles */
+.submit-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #333; /* Dark background */
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+}
+
+.submit-button:hover {
+  background-color: #555;
+}
+
+.submit-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Ideas List Styles */
+.ideas-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.idea-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.idea-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.idea-title {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.idea-description {
+  margin: 0 0 1rem 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Remove Button Styles */
+.remove-button {
+  padding: 0.5rem 1rem;
+  background-color: #000000; /* Black button */
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+  background-color: #333;
+}
+/* Submit Button Styles */
+.submit-button {
+  padding: 0.75rem 2rem;
+  background-color: #0a0a0a; /* Green background */
+  color: #fff;
+  border: none;
+  border-radius: 50px; /* Rounded, pill-shaped button */
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.submit-button:hover {
+  background-color: #787978; /* Darker green on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.submit-button:disabled {
+  background-color: #a0c5f1;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Remove Button Styles */
+.remove-button {
+  padding: 0.5rem 1.5rem;
+  background-color: transparent; /* Transparent background */
+  color: #090909; /* Red text */
+  border: 2px solid #a4a3a3; /* Red border */
+  border-radius: 25px; /* Rounded button */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.remove-button:hover {
+  background-color: #1e274d96; /* Red background on hover */
+  color: #f5f6f8; /* White text on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .submit-button,
+  .remove-button {
+    width: 100%;
+    text-align: center;
+  }
+}
